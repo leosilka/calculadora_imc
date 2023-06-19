@@ -36,4 +36,9 @@ btnCalculoImc.addEventListener("click", function(event) {
     const imc = calculoImc(peso, altura);
     const classificacao = classificacaoImc(imc)
     resultadoImc.textContent = classificacao;
+
+    pesoInput.value = "";
+    alturaInput.value = "";
+    valorIdade.value = "";
+    nomeInput.value = "";
 })
