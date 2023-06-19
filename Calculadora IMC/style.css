@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+/* Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --cor-primaria: #1439a0;
+    --cor-branco: #ffffff;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(to top, #ad98e7 20%, #a761a3 100%);
+    min-height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.125em;
+    font-family: 'Pacifico', cursive;
+}
+
+.cabecalho img {
+    margin-bottom: 0.625em;
+    margin-top: 3.125em;
+}
+
+main, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    border: 0.125em solid var(--cor-primaria);
+    border-radius: 25% 10%;
+    padding: 1.25em 6.25em 1.25em 6.25em;
+    margin: 3.125em 0 3.125em 0;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 0.125em;
+}
+
+.formulario input, .formulario button {
+    display: block;
+    margin-bottom: 1.25em;
+    padding: 0.5em;
+    border: 0.063em solid var(--cor-primaria);
+    border-radius: 0.25em;
+}
+
+.formulario input[type="range"] {
+    width: 90%;
+}
+
+.formulario button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 10% 25%;
+    font-family: 'Dosis', sans-serif;
+}
+
+footer {
+    margin-top: 6.25em;
+    font-family: 'Dosis', sans-serif;
+}
+
+@media (max-width: 1200px) {
+    section {
+        margin-top: 10px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+}

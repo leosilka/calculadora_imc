@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora I.M.C</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="/assents/logo.png" alt="logo_calculadora">
+        <h1>Calculadora I.M.C</h1>
+    </header>
+    <main>
+        <section>
+            <form class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex: Fulado Pires" required>
+                <label for="idade">Idade: <span id="valor_idade">0</span></label>
+                <input type="range" name="idade" id="idade" min="0" max="110" step="1">
+                <label for="peso">Peso:</label>
+                <input type="number" name="peso" id="peso" min="0" placeholder="Ex: 60.5" step="any" required>
+                <label for="altura">Altura:</label>
+                <input type="number" name="altura" id="altura" min="0" placeholder="Ex: 1.73" step="any" required>
+                <button type="submit" id="btnCalcularImc">Calcular IMC</button>
+                <p id="resultado_imc"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>Desenvolvido por Leonardo Silka&copy;</h4>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+</html>
